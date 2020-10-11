@@ -1,16 +1,18 @@
 # entregable_2
 
-A new Flutter project.
+Su proyecto guardado en un repositorio de Git.
 
-## Getting Started
+Video del progreso. App funcionando y mostrando lo que puede hacer.
 
-This project is a starting point for a Flutter application.
+Pantallas programadas en Flutter  (aunque no sea el diseño final) +15
 
-A few resources to get you started if this is your first Flutter project:
+App funcional! 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+30% de avance de su entregable final propuesto al principio. +60
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Navegacion entre pantallas +5
+
+Archivo de texto con listado de puntos que faltan para terminar su proyecto + link del video. +10
+
+Login funcionando al 100. +10
+
