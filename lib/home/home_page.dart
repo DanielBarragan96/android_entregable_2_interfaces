@@ -17,10 +17,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   HomeBloc _bloc;
-  final List<String> _choices = [
-    "Barcode",
-    "Image labeling",
-  ];
 
   @override
   void dispose() {
@@ -107,14 +103,6 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
-
-  void _onActionSelected(String action) {
-    if (action == "Barcode") {
-      _bloc.add(ScanPicture(barcodeScan: true));
-    } else if (action == "Image labeling") {
-      _bloc.add(ScanPicture(barcodeScan: false));
-    }
   }
 
   Widget _showDrawer() {
