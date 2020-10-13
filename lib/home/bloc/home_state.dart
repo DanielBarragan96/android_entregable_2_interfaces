@@ -25,3 +25,8 @@ class Results extends HomeState {
   @override
   List<Object> get props => [result, chosenImage];
 }
+
+class MenuChatState extends HomeState {
+  @override
+  List<Object> get props => [];
+}

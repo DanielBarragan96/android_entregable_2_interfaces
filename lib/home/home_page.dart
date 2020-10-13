@@ -1,3 +1,4 @@
+import 'package:entregable_2/chat/menu_chat_page.dart';
 import 'package:entregable_2/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -33,12 +34,13 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: kBlack,
       drawer: _showDrawer(),
       appBar: AppBar(
-          // leading: IconButton(
-          //   icon: FaIcon(FontAwesomeIcons.bars),
-          //   onPressed: () {},
-          //   iconSize: 20.0,
-          // ),
-          ),
+        // leading: IconButton(
+        //   icon: FaIcon(FontAwesomeIcons.bars),
+        //   onPressed: () {},
+        //   iconSize: 20.0,
+        // ),
+        title: _getAppBarLeading(),
+      ),
       bottomNavigationBar: BlocProvider(
         create: (context) {
           return _bloc;
@@ -73,7 +75,9 @@ class _HomePageState extends State<HomePage> {
                       width: MediaQuery.of(context).size.width / 3,
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.users),
-                        onPressed: () {},
+                        onPressed: () {
+                          _bloc.add(MenuChatEvent());
+                        },
                         iconSize: 20.0,
                         color: kWhite,
                       ),
@@ -95,7 +99,10 @@ class _HomePageState extends State<HomePage> {
             // if (state is Results) {
             //   return Center(child: Text("Seleccione accion del menu superior"));
             // }
-            return Center();
+            if (state is MenuChatState) {
+              return MenuChatPage();
+            } else
+              return Center();
           },
         ),
       ),
@@ -112,5 +119,14 @@ class _HomePageState extends State<HomePage> {
 
   Widget _showDrawer() {
     return Drawer();
+  }
+
+  Widget _getAppBarLeading() {
+    if (_bloc != null) {
+      if (_bloc.state is MenuChatState) {
+        return Text("Chats");
+      }
+    }
+    return Container();
   }
 }

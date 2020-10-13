@@ -14,3 +14,8 @@ class ScanPicture extends HomeEvent {
   @override
   List<Object> get props => [barcodeScan];
 }
+
+class MenuChatEvent extends HomeEvent {
+  @override
+  List<Object> get props => [];
+}

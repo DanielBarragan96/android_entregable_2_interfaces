@@ -29,6 +29,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           data = await _imgLabeling(img);
         yield Results(result: data, chosenImage: img);
       }
+    } else if (event is MenuChatEvent) {
+      yield MenuChatState();
     }
   }
 
