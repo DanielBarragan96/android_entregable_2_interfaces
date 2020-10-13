@@ -30,6 +30,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kBlack,
       drawer: _showDrawer(),
       appBar: AppBar(
           // leading: IconButton(
@@ -63,7 +64,7 @@ class _HomePageState extends State<HomePage> {
             // if (state is Results) {
             //   return Center(child: Text("Seleccione accion del menu superior"));
             // }
-            return Center(child: Text("Seleccione accion del menu superior"));
+            return Center();
           },
         ),
       ),
