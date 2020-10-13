@@ -49,6 +49,37 @@ class _HomePageState extends State<HomePage> {
               height: MediaQuery.of(context).size.height / 10,
               child: Container(
                 color: kMainPurple,
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 3,
+                      child: IconButton(
+                        icon: FaIcon(FontAwesomeIcons.spotify),
+                        onPressed: () {},
+                        iconSize: 20.0,
+                        color: kWhite,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 3,
+                      child: IconButton(
+                        icon: FaIcon(FontAwesomeIcons.mapMarkedAlt),
+                        onPressed: () {},
+                        iconSize: 20.0,
+                        color: kWhite,
+                      ),
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 3,
+                      child: IconButton(
+                        icon: FaIcon(FontAwesomeIcons.users),
+                        onPressed: () {},
+                        iconSize: 20.0,
+                        color: kWhite,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             );
           },
