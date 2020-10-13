@@ -35,7 +35,8 @@ class _HomePageState extends State<HomePage> {
         //   onPressed: () {},
         //   iconSize: 20.0,
         // ),
-        title: _getAppBarLeading(),
+        //TODO change appbar title with bloc
+        title: _getAppBarTitle(),
       ),
       bottomNavigationBar: BlocProvider(
         create: (context) {
@@ -53,7 +54,9 @@ class _HomePageState extends State<HomePage> {
                       width: MediaQuery.of(context).size.width / 3,
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.spotify),
-                        onPressed: () {},
+                        onPressed: () {
+                          _bloc.add(MenuStatsEvent());
+                        },
                         iconSize: 20.0,
                         color: kWhite,
                       ),
@@ -62,7 +65,9 @@ class _HomePageState extends State<HomePage> {
                       width: MediaQuery.of(context).size.width / 3,
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.mapMarkedAlt),
-                        onPressed: () {},
+                        onPressed: () {
+                          _bloc.add(MenuMapEvent());
+                        },
                         iconSize: 20.0,
                         color: kWhite,
                       ),
@@ -109,8 +114,14 @@ class _HomePageState extends State<HomePage> {
     return Drawer();
   }
 
-  Widget _getAppBarLeading() {
+  Widget _getAppBarTitle() {
     if (_bloc != null) {
+      if (_bloc.state is MenuStatsState) {
+        return Text("Stats");
+      }
+      if (_bloc.state is MenuMapState) {
+        return Text("Map");
+      }
       if (_bloc.state is MenuChatState) {
         return Text("Chats");
       }

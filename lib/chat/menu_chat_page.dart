@@ -42,16 +42,19 @@ class _MenuChatPageState extends State<MenuChatPage> {
             ),
             itemCount: _data.length,
             itemBuilder: (BuildContext context, int index) {
-              return ListTile(
-                leading: Image.network(_data[index]["picture"]),
-                title: Text(
-                  "${_data[index]["name"]}",
-                  style: TextStyle(color: kWhite),
+              return GestureDetector(
+                onTap: () {},
+                child: ListTile(
+                  leading: Image.network(_data[index]["picture"]),
+                  title: Text(
+                    "${_data[index]["name"]}",
+                    style: TextStyle(color: kWhite),
+                  ),
+                  // trailing: Icon(
+                  //   FontAwesomeIcons.angleDown,
+                  //   color: kWhite,
+                  // ),
                 ),
-                // trailing: Icon(
-                //   FontAwesomeIcons.angleDown,
-                //   color: kWhite,
-                // ),
               );
             },
           ),
