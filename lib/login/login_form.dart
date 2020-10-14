@@ -16,11 +16,11 @@ class _LoginFormState extends State<LoginForm> {
   LoginBloc _loginBloc;
   bool _showLoading = false;
 
-  // @override
-  // void dispose() {
-  //   _loginBloc.close();
-  //   super.dispose();
-  // }
+  @override
+  void dispose() {
+    _loginBloc.close();
+    super.dispose();
+  }
 
   void _emailLogIn(bool _) {
     showModalBottomSheet(
