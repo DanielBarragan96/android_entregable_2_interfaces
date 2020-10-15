@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
+Widget menuMapPage(HomeBloc _bloc, BuildContext context) {
   return Scaffold(
     backgroundColor: kBlack,
     drawer: DrawerWidget(),
     appBar: AppBar(
-      title: Text("Stats"),
+      title: Text("Map"),
     ),
     body: BlocProvider(
       create: (context) {
@@ -40,20 +40,20 @@ Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
               width: MediaQuery.of(context).size.width / 3,
               child: IconButton(
                 icon: FaIcon(FontAwesomeIcons.spotify),
-                onPressed: () {},
+                onPressed: () {
+                  _bloc.add(MenuStatsEvent());
+                },
                 iconSize: 25.0,
-                color: kWhite,
+                color: kLightGray,
               ),
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width / 3,
               child: IconButton(
                 icon: FaIcon(FontAwesomeIcons.mapMarkedAlt),
-                onPressed: () {
-                  _bloc.add(MenuMapEvent());
-                },
+                onPressed: () {},
                 iconSize: 25.0,
-                color: kLightGray,
+                color: kWhite,
               ),
             ),
             SizedBox(
