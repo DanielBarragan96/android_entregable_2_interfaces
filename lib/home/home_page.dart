@@ -1,5 +1,7 @@
 import 'package:entregable_2/chat/menu_chat_page.dart';
 import 'package:entregable_2/colors.dart';
+import 'package:entregable_2/map/menu_map_page.dart';
+import 'package:entregable_2/stats/menu_stats_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -39,8 +41,17 @@ class _HomePageState extends State<HomePage> {
               return MenuChatPage(
                 bloc: _bloc,
               );
-            } else
+            }else if(state is MenuStatsState){
+              return MenuStatsPage(
+                bloc: _bloc,
+              );
+            }else if(state is MenuMapState){
+              return MenuMapPage(
+                bloc: _bloc,
+              );
+            }else {
               return Center();
+            }
           },
         ),
       ),

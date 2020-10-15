@@ -121,7 +121,9 @@ class _MenuChatPageState extends State<MenuChatPage> {
                 width: MediaQuery.of(context).size.width / 3,
                 child: IconButton(
                   icon: FaIcon(FontAwesomeIcons.users),
-                  onPressed: () {},
+                  onPressed: () {
+                    _blocMenuChat.add(MenuChatEvent());
+                  },
                   iconSize: 25.0,
                   color: kWhite,
                 ),

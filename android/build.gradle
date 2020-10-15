@@ -20,12 +20,10 @@ allprojects {
 }
 
 rootProject.buildDir = '../build'
-// subprojects {
-//     project.buildDir = "${rootProject.buildDir}/${project.name}"
-// }
-// subprojects {
-//     project.evaluationDependsOn(':app')
-// }
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+        project.evaluationDependsOn(':app')
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
