@@ -35,6 +35,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       yield MenuMapState();
     } else if (event is MenuChatEvent) {
       yield MenuChatState();
+    } else if (event is SingleChatEvent) {
+      yield SingleChatState(userName: event.userName);
     }
   }
 

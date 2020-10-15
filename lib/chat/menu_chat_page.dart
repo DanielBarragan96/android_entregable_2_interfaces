@@ -49,11 +49,17 @@ Widget menuChatPage(HomeBloc _bloc, BuildContext context) {
                     ),
                     itemCount: _data.length,
                     itemBuilder: (BuildContext context, int index) {
-                      return ListTile(
-                        leading: Image.network(_data[index]["picture"]),
-                        title: Text(
-                          "${_data[index]["name"]}",
-                          style: TextStyle(color: kWhite),
+                      return GestureDetector(
+                        onTap: () {
+                          _bloc.add(
+                              SingleChatEvent(userName: _data[index]["name"]));
+                        },
+                        child: ListTile(
+                          leading: Image.network(_data[index]["picture"]),
+                          title: Text(
+                            "${_data[index]["name"]}",
+                            style: TextStyle(color: kWhite),
+                          ),
                         ),
                       );
                     },
