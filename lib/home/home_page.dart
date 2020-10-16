@@ -44,7 +44,6 @@ class _HomePageState extends State<HomePage> {
               return menuMapPage(_bloc, context);
             }
             if (state is MenuChatState) {
-              // return singleChatPage(_bloc, context, "Juan Perez");
               return menuChatPage(_bloc, context);
             }
             if (state is SingleChatState) {
