@@ -29,3 +29,12 @@ class MenuChatEvent extends HomeEvent {
   @override
   List<Object> get props => [];
 }
+
+class SingleChatEvent extends HomeEvent {
+  final String userName;
+
+  SingleChatEvent({@required this.userName});
+
+  @override
+  List<Object> get props => [];
+}
