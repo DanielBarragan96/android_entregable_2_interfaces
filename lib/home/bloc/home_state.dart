@@ -40,3 +40,11 @@ class MenuChatState extends HomeState {
   @override
   List<Object> get props => [];
 }
+
+class SingleChatState extends HomeState {
+  final String userName;
+
+  SingleChatState({@required this.userName});
+  @override
+  List<Object> get props => [];
+}

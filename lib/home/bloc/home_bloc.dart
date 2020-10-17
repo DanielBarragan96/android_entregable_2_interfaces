@@ -11,7 +11,7 @@ part 'home_event.dart';
 part 'home_state.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
-  HomeBloc() : super(MenuMapState());
+  HomeBloc() : super(MenuStatsState());
 
   @override
   Stream<HomeState> mapEventToState(
@@ -35,6 +35,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       yield MenuMapState();
     } else if (event is MenuChatEvent) {
       yield MenuChatState();
+    } else if (event is SingleChatEvent) {
+      yield SingleChatState(userName: event.userName);
     }
   }
 
