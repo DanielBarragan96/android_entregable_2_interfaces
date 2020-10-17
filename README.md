@@ -1,6 +1,7 @@
 # entregable_2
 
 El video se encuentra en este [link](https://www.youtube.com/watch?v=pRkTBuI5S6k&feature=share)
+
 El reporte se encuentra en este [link](https://docs.google.com/document/d/1e_oLZ_khUJbCRb_MGvv7NQJkpTrghBhDMW1LZum2iVw/edit?usp=sharing)
 
 Su proyecto guardado en un repositorio de Git.
