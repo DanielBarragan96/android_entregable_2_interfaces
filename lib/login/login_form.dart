@@ -58,7 +58,9 @@ class _LoginFormState extends State<LoginForm> {
                 ),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 30),
-                  child: TextField(),
+                  child: TextField(
+                    obscureText: true,
+                  ),
                 ),
                 SizedBox(height: 40),
                 MaterialButton(

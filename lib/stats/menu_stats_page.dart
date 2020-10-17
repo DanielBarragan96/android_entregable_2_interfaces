@@ -12,135 +12,113 @@ import 'package:charts_flutter/flutter.dart' as charts;
 
 final List<SongsSeries> songs_data = [
   SongsSeries(
-    day: "Mon",
-    songs: 60,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Mon",
+      songs: 60,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   SongsSeries(
-    day: "Tue",
-    songs: 50,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Tue",
+      songs: 50,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   SongsSeries(
-    day: "Wed",
-    songs: 40,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Wed",
+      songs: 40,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   SongsSeries(
-    day: "Thu",
-    songs: 50,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Thu",
+      songs: 50,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   SongsSeries(
-    day: "Fri",
-    songs: 70,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Fri",
+      songs: 70,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   SongsSeries(
-    day: "Sut",
-    songs: 80,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),  
+      day: "Sut",
+      songs: 80,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   SongsSeries(
-    day: "Sun",
-    songs: 30,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Sun",
+      songs: 30,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
 ];
 
 final List<ArtistsSeries> artists_data = [
   ArtistsSeries(
-    day: "Mon",
-    artists: 30,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Mon",
+      artists: 30,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   ArtistsSeries(
-    day: "Tue",
-    artists: 25,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Tue",
+      artists: 25,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   ArtistsSeries(
-    day: "Wed",
-    artists: 20,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Wed",
+      artists: 20,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   ArtistsSeries(
-    day: "Thu",
-    artists: 25,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Thu",
+      artists: 25,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   ArtistsSeries(
-    day: "Fri",
-    artists: 35,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Fri",
+      artists: 35,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   ArtistsSeries(
-    day: "Sut",
-    artists: 40,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),  
+      day: "Sut",
+      artists: 40,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   ArtistsSeries(
-    day: "Sun",
-    artists: 15,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Sun",
+      artists: 15,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
 ];
 
 final List<AlbumesSeries> albumes_data = [
   AlbumesSeries(
-    day: "Mon",
-    albumes: 45,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Mon",
+      albumes: 45,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   AlbumesSeries(
-    day: "Tue",
-    albumes: 30,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Tue",
+      albumes: 30,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   AlbumesSeries(
-    day: "Wed",
-    albumes: 30,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Wed",
+      albumes: 30,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   AlbumesSeries(
-    day: "Thu",
-    albumes: 30,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Thu",
+      albumes: 30,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   AlbumesSeries(
-    day: "Fri",
-    albumes: 45,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Fri",
+      albumes: 45,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   AlbumesSeries(
-    day: "Sut",
-    albumes: 60,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),  
+      day: "Sut",
+      albumes: 60,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
   AlbumesSeries(
-    day: "Sun",
-    albumes: 20,
-    barColor: charts.ColorUtil.fromDartColor(kLightestPurple)
-  ),
+      day: "Sun",
+      albumes: 20,
+      barColor: charts.ColorUtil.fromDartColor(kLightestPurple)),
 ];
 
-enum StatsType {SONGS,ARTISTS,ALBUMES}
+enum StatsType { SONGS, ARTISTS, ALBUMES }
 StatsType stats_type = StatsType.SONGS;
 
-Widget _getChart(StatsType type){
+Widget _getChart(StatsType type) {
   var chart;
 
-  if(type == StatsType.SONGS){
+  if (type == StatsType.SONGS) {
     chart = SongsChart(data: songs_data);
-  }else if(type == StatsType.ARTISTS){
+  } else if (type == StatsType.ARTISTS) {
     chart = ArtistsChart(data: artists_data);
-  }else{
+  } else {
     chart = AlbumesChart(data: albumes_data);
   }
 
   return chart;
 }
-
 
 Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
   return Scaffold(
@@ -161,7 +139,7 @@ Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
               child: Column(
                 children: [
                   Stack(
-                    children: <Widget> [
+                    children: <Widget>[
                       Container(
                         child: _getChart(stats_type),
                       ),
@@ -170,7 +148,7 @@ Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
                   const SizedBox(height: 80),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget> [
+                    children: <Widget>[
                       const SizedBox(width: 10),
                       ButtonTheme(
                         minWidth: 100,
@@ -182,7 +160,7 @@ Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
                             'SONGS\nPER\nDAY',
                             textAlign: TextAlign.center,
                           ),
-                          onPressed: (){
+                          onPressed: () {
                             stats_type = StatsType.SONGS;
                           },
                         ),
@@ -197,7 +175,7 @@ Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
                             'ARTISTS\nPER\nDAY',
                             textAlign: TextAlign.center,
                           ),
-                          onPressed: (){
+                          onPressed: () {
                             stats_type = StatsType.ARTISTS;
                           },
                         ),
@@ -212,12 +190,12 @@ Widget menuStatsPage(HomeBloc _bloc, BuildContext context) {
                             'ALBUMES\nPER\nDAY',
                             textAlign: TextAlign.center,
                           ),
-                          onPressed: (){
+                          onPressed: () {
                             stats_type = StatsType.ALBUMES;
                           },
                         ),
                       ),
-                      const SizedBox(width: 10),                                            
+                      const SizedBox(width: 10),
                     ],
                   )
                 ],

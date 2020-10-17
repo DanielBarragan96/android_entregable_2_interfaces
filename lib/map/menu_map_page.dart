@@ -41,7 +41,7 @@ Widget menuMapPage(HomeBloc _bloc, BuildContext context) {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 40,horizontal:20),
+                  margin: EdgeInsets.symmetric(vertical: 40, horizontal: 20),
                   child: Align(
                     alignment: Alignment.bottomLeft,
                     child: FloatingActionButton(
